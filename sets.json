@@ -1,0 +1,702 @@
+[
+  {
+    "setId": "A1",
+    "mode": "assessment",
+    "title": "Employee Directory",
+    "resource": "employees",
+    "text1": {
+      "name": "name",
+      "minLen": 3,
+      "maxLen": 60,
+      "searchable": true,
+      "sortable": true
+    },
+    "text2": {
+      "name": "designation",
+      "minLen": 2,
+      "maxLen": 40,
+      "searchable": true
+    },
+    "enum": {
+      "name": "department",
+      "values": [
+        "Engineering",
+        "HR",
+        "Finance",
+        "Sales",
+        "Support"
+      ],
+      "filterable": true
+    },
+    "amount": {
+      "name": "salary",
+      "exclusiveMin": 0,
+      "max": 10000000,
+      "genMin": 1,
+      "genDecimals": 2,
+      "rangeFilter": [
+        "minSalary",
+        "maxSalary"
+      ],
+      "sortable": true
+    },
+    "count": {
+      "name": "experienceYears",
+      "integer": true,
+      "min": 0,
+      "max": 45,
+      "sortable": true
+    },
+    "flag": {
+      "name": "isActive",
+      "filterable": true
+    },
+    "uniqueCode": {
+      "name": "employeeCode",
+      "minLen": 4,
+      "maxLen": 20,
+      "caseInsensitiveUnique": true
+    },
+    "sample": {
+      "name": "Priya Raman",
+      "designation": "Software Engineer",
+      "department": "Engineering",
+      "salary": 65000,
+      "experienceYears": 3,
+      "isActive": true,
+      "employeeCode": "EMP-1042"
+    },
+    "sortFields": [
+      "name",
+      "salary",
+      "experienceYears"
+    ]
+  },
+  {
+    "setId": "A2",
+    "mode": "assessment",
+    "title": "Doctor Directory",
+    "resource": "doctors",
+    "text1": {
+      "name": "name",
+      "minLen": 3,
+      "maxLen": 60,
+      "searchable": true,
+      "sortable": true
+    },
+    "text2": {
+      "name": "clinic",
+      "minLen": 2,
+      "maxLen": 40,
+      "searchable": true
+    },
+    "enum": {
+      "name": "specialization",
+      "values": [
+        "Cardiology",
+        "Dermatology",
+        "Neurology",
+        "Pediatrics",
+        "Orthopedics"
+      ],
+      "filterable": true
+    },
+    "amount": {
+      "name": "consultationFee",
+      "exclusiveMin": 0,
+      "max": 50000,
+      "genMin": 1,
+      "genDecimals": 2,
+      "rangeFilter": [
+        "minConsultationFee",
+        "maxConsultationFee"
+      ],
+      "sortable": true
+    },
+    "count": {
+      "name": "experienceYears",
+      "integer": true,
+      "min": 0,
+      "max": 60,
+      "sortable": true
+    },
+    "flag": {
+      "name": "acceptingPatients",
+      "filterable": true
+    },
+    "uniqueCode": {
+      "name": "licenseNumber",
+      "minLen": 4,
+      "maxLen": 20,
+      "caseInsensitiveUnique": true
+    },
+    "sample": {
+      "name": "Dr. Arjun Mehta",
+      "clinic": "City Care Clinic",
+      "specialization": "Cardiology",
+      "consultationFee": 800,
+      "experienceYears": 12,
+      "acceptingPatients": true,
+      "licenseNumber": "TN-45821"
+    },
+    "sortFields": [
+      "name",
+      "consultationFee",
+      "experienceYears"
+    ]
+  },
+  {
+    "setId": "A3",
+    "mode": "assessment",
+    "title": "Online Courses",
+    "resource": "courses",
+    "text1": {
+      "name": "title",
+      "minLen": 3,
+      "maxLen": 60,
+      "searchable": true,
+      "sortable": true
+    },
+    "text2": {
+      "name": "instructor",
+      "minLen": 2,
+      "maxLen": 40,
+      "searchable": true
+    },
+    "enum": {
+      "name": "category",
+      "values": [
+        "Programming",
+        "Design",
+        "Data",
+        "Business",
+        "Marketing"
+      ],
+      "filterable": true
+    },
+    "amount": {
+      "name": "fee",
+      "exclusiveMin": 0,
+      "max": 200000,
+      "genMin": 1,
+      "genDecimals": 2,
+      "rangeFilter": [
+        "minFee",
+        "maxFee"
+      ],
+      "sortable": true
+    },
+    "count": {
+      "name": "durationHours",
+      "integer": true,
+      "min": 1,
+      "max": 1000,
+      "sortable": true
+    },
+    "flag": {
+      "name": "published",
+      "filterable": true
+    },
+    "uniqueCode": null,
+    "sample": {
+      "title": "Full Stack with MERN",
+      "instructor": "Kavya Nair",
+      "category": "Programming",
+      "fee": 15000,
+      "durationHours": 120,
+      "published": true
+    },
+    "sortFields": [
+      "title",
+      "fee",
+      "durationHours"
+    ]
+  },
+  {
+    "setId": "A4",
+    "mode": "assessment",
+    "title": "Movie Catalog",
+    "resource": "movies",
+    "text1": {
+      "name": "title",
+      "minLen": 3,
+      "maxLen": 60,
+      "searchable": true,
+      "sortable": true
+    },
+    "text2": {
+      "name": "director",
+      "minLen": 2,
+      "maxLen": 40,
+      "searchable": true
+    },
+    "enum": {
+      "name": "genre",
+      "values": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Thriller",
+        "SciFi"
+      ],
+      "filterable": true
+    },
+    "amount": {
+      "name": "rating",
+      "exclusiveMin": 0,
+      "max": 10,
+      "genMin": 0.1,
+      "genDecimals": 1,
+      "rangeFilter": [
+        "minRating",
+        "maxRating"
+      ],
+      "sortable": true
+    },
+    "count": {
+      "name": "durationMinutes",
+      "integer": true,
+      "min": 1,
+      "max": 600,
+      "sortable": true
+    },
+    "flag": {
+      "name": "nowShowing",
+      "filterable": true
+    },
+    "uniqueCode": null,
+    "sample": {
+      "title": "Inception",
+      "director": "Christopher Nolan",
+      "genre": "SciFi",
+      "rating": 8.8,
+      "durationMinutes": 148,
+      "nowShowing": false
+    },
+    "sortFields": [
+      "title",
+      "rating",
+      "durationMinutes"
+    ]
+  },
+  {
+    "setId": "A5",
+    "mode": "assessment",
+    "title": "Hotel Rooms",
+    "resource": "rooms",
+    "text1": {
+      "name": "name",
+      "minLen": 3,
+      "maxLen": 60,
+      "searchable": true,
+      "sortable": true
+    },
+    "text2": {
+      "name": "location",
+      "minLen": 2,
+      "maxLen": 40,
+      "searchable": true
+    },
+    "enum": {
+      "name": "type",
+      "values": [
+        "Single",
+        "Double",
+        "Suite",
+        "Deluxe",
+        "Family"
+      ],
+      "filterable": true
+    },
+    "amount": {
+      "name": "pricePerNight",
+      "exclusiveMin": 0,
+      "max": 100000,
+      "genMin": 1,
+      "genDecimals": 2,
+      "rangeFilter": [
+        "minPricePerNight",
+        "maxPricePerNight"
+      ],
+      "sortable": true
+    },
+    "count": {
+      "name": "capacity",
+      "integer": true,
+      "min": 1,
+      "max": 10,
+      "sortable": true
+    },
+    "flag": {
+      "name": "available",
+      "filterable": true
+    },
+    "uniqueCode": {
+      "name": "roomNumber",
+      "minLen": 4,
+      "maxLen": 20,
+      "caseInsensitiveUnique": true
+    },
+    "sample": {
+      "name": "Lake View Deluxe",
+      "location": "Ooty",
+      "type": "Deluxe",
+      "pricePerNight": 4500,
+      "capacity": 3,
+      "available": true,
+      "roomNumber": "R-204"
+    },
+    "sortFields": [
+      "name",
+      "pricePerNight",
+      "capacity"
+    ]
+  },
+  {
+    "setId": "A6",
+    "mode": "assessment",
+    "title": "Restaurant Menu",
+    "resource": "dishes",
+    "text1": {
+      "name": "dishName",
+      "minLen": 3,
+      "maxLen": 60,
+      "searchable": true,
+      "sortable": true
+    },
+    "text2": {
+      "name": "restaurant",
+      "minLen": 2,
+      "maxLen": 40,
+      "searchable": true
+    },
+    "enum": {
+      "name": "category",
+      "values": [
+        "Starter",
+        "MainCourse",
+        "Dessert",
+        "Beverage",
+        "Snack"
+      ],
+      "filterable": true
+    },
+    "amount": {
+      "name": "price",
+      "exclusiveMin": 0,
+      "max": 5000,
+      "genMin": 1,
+      "genDecimals": 2,
+      "rangeFilter": [
+        "minPrice",
+        "maxPrice"
+      ],
+      "sortable": true
+    },
+    "count": {
+      "name": "calories",
+      "integer": true,
+      "min": 0,
+      "max": 5000,
+      "sortable": true
+    },
+    "flag": {
+      "name": "isVegetarian",
+      "filterable": true
+    },
+    "uniqueCode": null,
+    "sample": {
+      "dishName": "Paneer Tikka",
+      "restaurant": "Spice Garden",
+      "category": "Starter",
+      "price": 220,
+      "calories": 320,
+      "isVegetarian": true
+    },
+    "sortFields": [
+      "dishName",
+      "price",
+      "calories"
+    ]
+  },
+  {
+    "setId": "A7",
+    "mode": "assessment",
+    "title": "Car Rental",
+    "resource": "vehicles",
+    "text1": {
+      "name": "model",
+      "minLen": 3,
+      "maxLen": 60,
+      "searchable": true,
+      "sortable": true
+    },
+    "text2": {
+      "name": "brand",
+      "minLen": 2,
+      "maxLen": 40,
+      "searchable": true
+    },
+    "enum": {
+      "name": "type",
+      "values": [
+        "Hatchback",
+        "Sedan",
+        "SUV",
+        "Van",
+        "Bike"
+      ],
+      "filterable": true
+    },
+    "amount": {
+      "name": "rentPerDay",
+      "exclusiveMin": 0,
+      "max": 50000,
+      "genMin": 1,
+      "genDecimals": 2,
+      "rangeFilter": [
+        "minRentPerDay",
+        "maxRentPerDay"
+      ],
+      "sortable": true
+    },
+    "count": {
+      "name": "seats",
+      "integer": true,
+      "min": 1,
+      "max": 60,
+      "sortable": true
+    },
+    "flag": {
+      "name": "available",
+      "filterable": true
+    },
+    "uniqueCode": {
+      "name": "registrationNumber",
+      "minLen": 4,
+      "maxLen": 20,
+      "caseInsensitiveUnique": true
+    },
+    "sample": {
+      "model": "Swift",
+      "brand": "Maruti",
+      "type": "Hatchback",
+      "rentPerDay": 1800,
+      "seats": 5,
+      "available": true,
+      "registrationNumber": "TN09AB1234"
+    },
+    "sortFields": [
+      "model",
+      "rentPerDay",
+      "seats"
+    ]
+  },
+  {
+    "setId": "A8",
+    "mode": "assessment",
+    "title": "Event Tickets",
+    "resource": "events",
+    "text1": {
+      "name": "title",
+      "minLen": 3,
+      "maxLen": 60,
+      "searchable": true,
+      "sortable": true
+    },
+    "text2": {
+      "name": "venue",
+      "minLen": 2,
+      "maxLen": 40,
+      "searchable": true
+    },
+    "enum": {
+      "name": "category",
+      "values": [
+        "Music",
+        "Tech",
+        "Sports",
+        "Workshop",
+        "Festival"
+      ],
+      "filterable": true
+    },
+    "amount": {
+      "name": "ticketPrice",
+      "exclusiveMin": 0,
+      "max": 50000,
+      "genMin": 1,
+      "genDecimals": 2,
+      "rangeFilter": [
+        "minTicketPrice",
+        "maxTicketPrice"
+      ],
+      "sortable": true
+    },
+    "count": {
+      "name": "seatsAvailable",
+      "integer": true,
+      "min": 0,
+      "max": 100000,
+      "sortable": true
+    },
+    "flag": {
+      "name": "isOnline",
+      "filterable": true
+    },
+    "uniqueCode": null,
+    "sample": {
+      "title": "DevFest Chennai",
+      "venue": "Trade Centre",
+      "category": "Tech",
+      "ticketPrice": 499,
+      "seatsAvailable": 250,
+      "isOnline": false
+    },
+    "sortFields": [
+      "title",
+      "ticketPrice",
+      "seatsAvailable"
+    ]
+  },
+  {
+    "setId": "A9",
+    "mode": "assessment",
+    "title": "Job Postings",
+    "resource": "jobs",
+    "text1": {
+      "name": "title",
+      "minLen": 3,
+      "maxLen": 60,
+      "searchable": true,
+      "sortable": true
+    },
+    "text2": {
+      "name": "company",
+      "minLen": 2,
+      "maxLen": 40,
+      "searchable": true
+    },
+    "enum": {
+      "name": "jobType",
+      "values": [
+        "FullTime",
+        "PartTime",
+        "Internship",
+        "Contract",
+        "Freelance"
+      ],
+      "filterable": true
+    },
+    "amount": {
+      "name": "monthlySalary",
+      "exclusiveMin": 0,
+      "max": 500000,
+      "genMin": 1,
+      "genDecimals": 2,
+      "rangeFilter": [
+        "minMonthlySalary",
+        "maxMonthlySalary"
+      ],
+      "sortable": true
+    },
+    "count": {
+      "name": "openings",
+      "integer": true,
+      "min": 1,
+      "max": 500,
+      "sortable": true
+    },
+    "flag": {
+      "name": "isRemote",
+      "filterable": true
+    },
+    "uniqueCode": {
+      "name": "jobCode",
+      "minLen": 4,
+      "maxLen": 20,
+      "caseInsensitiveUnique": true
+    },
+    "sample": {
+      "title": "Junior Backend Developer",
+      "company": "Infotech Solutions",
+      "jobType": "FullTime",
+      "monthlySalary": 45000,
+      "openings": 12,
+      "isRemote": false,
+      "jobCode": "JOB26BE01"
+    },
+    "sortFields": [
+      "title",
+      "monthlySalary",
+      "openings"
+    ]
+  },
+  {
+    "setId": "A10",
+    "mode": "assessment",
+    "title": "Travel Packages",
+    "resource": "packages",
+    "text1": {
+      "name": "name",
+      "minLen": 3,
+      "maxLen": 60,
+      "searchable": true,
+      "sortable": true
+    },
+    "text2": {
+      "name": "destination",
+      "minLen": 2,
+      "maxLen": 40,
+      "searchable": true
+    },
+    "enum": {
+      "name": "category",
+      "values": [
+        "Beach",
+        "Hill",
+        "Heritage",
+        "Adventure",
+        "Pilgrimage"
+      ],
+      "filterable": true
+    },
+    "amount": {
+      "name": "pricePerPerson",
+      "exclusiveMin": 0,
+      "max": 200000,
+      "genMin": 1,
+      "genDecimals": 2,
+      "rangeFilter": [
+        "minPricePerPerson",
+        "maxPricePerPerson"
+      ],
+      "sortable": true
+    },
+    "count": {
+      "name": "durationDays",
+      "integer": true,
+      "min": 1,
+      "max": 60,
+      "sortable": true
+    },
+    "flag": {
+      "name": "includesFlight",
+      "filterable": true
+    },
+    "uniqueCode": null,
+    "sample": {
+      "name": "Goa Beach Getaway",
+      "destination": "Goa",
+      "category": "Beach",
+      "pricePerPerson": 18500,
+      "durationDays": 4,
+      "includesFlight": false
+    },
+    "sortFields": [
+      "name",
+      "pricePerPerson",
+      "durationDays"
+    ]
+  }
+]
